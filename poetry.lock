@@ -630,8 +630,8 @@ static-test = ["flake8-bandit", "flake8-broken-line", "flake8-bugbear", "flake8-
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.7.9"
-content-hash = "036b5315d6886d48826c17fcfdce757ba1df52746e6ba1067e8c0a3f53e32712"
+python-versions = "^3.7"
+content-hash = "12e41aebb335bed8cbbad37a9cfbc3ee0c82317fd903a4955d4e815893459b3f"
 
 [metadata.files]
 appdirs = [

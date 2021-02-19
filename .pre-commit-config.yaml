@@ -2,7 +2,6 @@ repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.3.0
     hooks:
-    -   id: check-json
     -   id: check-toml
     -   id: check-merge-conflict
     -   id: check-docstring-first
@@ -23,9 +22,9 @@ repos:
     rev: v1.5.4
     hooks:
     -   id: autopep8
-        args: ["--max-line-length=120", "--ignore=E241,F401,W504", "--diff"]
+        args: ["--max-line-length=120", "--ignore=E241, W504", "--diff"]
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.4
     hooks:
     -   id: flake8
-        args: ["--max-line-length=120", "--ignore=E241,F401,W504", "--show-source"]
+        args: ["--max-line-length=120", "--ignore=E241, W504", "--show-source"]

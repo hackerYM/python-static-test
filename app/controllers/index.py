@@ -14,7 +14,7 @@ def api_index():
     """
     json_resp = {
         "code": HTTPStatus.OK,
-        "message": "Welcome to API index page.",
+        "message": "Welcome to an API index page.",
     }
 
     return jsonify(json_resp), HTTPStatus.OK
