@@ -15,7 +15,7 @@ The simple template to prepare static tests on a Python project.
 
 1. [Install a Python version management - pyenv](https://github.com/pyenv/pyenv)
 
-1. [Install a dependency management - poetry]((https://python-poetry.org/docs/))
+1. [Install a dependency management - poetry](https://python-poetry.org/docs/)
 
 1. Create a virtual environment
 
