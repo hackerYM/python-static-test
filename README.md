@@ -2,6 +2,10 @@
 
 ### About
 
+![GitHub](https://img.shields.io/github/license/hackerYM/python-static-test?color=blue)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/hackerYM/python-static-test?color=blue)
+![Code Style](https://img.shields.io/badge/code%20style-flake8-000000.svg)
+
 The simple template to prepare static tests on a Python project.
 
 
