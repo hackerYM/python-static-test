@@ -4,6 +4,7 @@
 
 The simple template to prepare static tests on a Python project.
 
+
 ### Project setup
 
 1. [Install a macOS packages management - brew](https://brew.sh/)
@@ -20,13 +21,17 @@ The simple template to prepare static tests on a Python project.
    poetry env info
    ```
 
-1. Inspect Python requirements
+   ![Sample Image](images/sample-01.png)
+
+1. Inspect Python packages
 
    ```bash
    poetry show
    poetry show --tree
    poetry show <package> --tree
    ```
+
+   ![Sample Image](images/sample-02.png)
 
 1. Install Python packages
 
@@ -39,6 +44,9 @@ The simple template to prepare static tests on a Python project.
    pre-commit install
    pre-commit run --all-files  # git hook scripts
    ```
+
+   ![Sample Image](images/sample-03.png)
+
 
 ### Utility Commands
 
