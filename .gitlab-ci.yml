@@ -1,0 +1,24 @@
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  GIT_DEPTH: 10
+  DOCKER_DRIVER: overlay2
+  CODE_QUALITY_PATH: $CI_PROJECT_DIR/gl-code-quality-report.json
+
+static_test:
+  stage: test
+  image: python:3.7-slim
+  script:
+    - pip3 install -q --no-cache-dir --upgrade pip flakehell safety
+    - (flakehell missed; echo;) | xargs pip3 install -q --no-cache-dir || if [ $? -le 1 ]; then echo "ok"; fi
+    - cat ./requirements.txt | safety check --full-report --stdin
+    - flakehell plugins
+    - flakehell lint --format=gitlab --output-file $CODE_QUALITY_PATH
+  artifacts:
+    name: Code-Quality
+    when: always
+    reports:
+      codequality: $CODE_QUALITY_PATH
