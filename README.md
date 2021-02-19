@@ -1,4 +1,4 @@
-## Python Static Test Template
+# Python Static Test
 
 ### About
 
