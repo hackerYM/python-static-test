@@ -248,17 +248,6 @@ python-versions = "*"
 flake8 = "*"
 
 [[package]]
-name = "flake8-quotes"
-version = "3.2.0"
-description = "Flake8 lint for quotes."
-category = "main"
-optional = true
-python-versions = "*"
-
-[package.dependencies]
-flake8 = "*"
-
-[[package]]
 name = "flakehell"
 version = "0.9.0"
 description = "Flake8 wrapper to make it nice and configurable"
@@ -714,13 +703,13 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [extras]
-static-test = ["flake8-bandit", "flake8-broken-line", "flake8-bugbear", "flake8-builtins", "flake8-commas", "flake8-comprehensions", "flake8-mutable", "flake8-quotes", "flakehell", "pep8-naming", "safety"]
+static-test = ["flake8-bandit", "flake8-broken-line", "flake8-bugbear", "flake8-builtins", "flake8-commas", "flake8-comprehensions", "flake8-mutable", "flakehell", "pep8-naming", "safety"]
 unit-test = ["pytest-flask", "pytest-cov"]
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "d0d84580324e0eb0d6e0a09ac5f9c2cc1b51550a785dedbb7c3ca0a66970a6e9"
+content-hash = "d04278368d287758e3aa31932456c6ef8bb79ba714b7fa880e671a4e65beb041"
 
 [metadata.files]
 appdirs = [
@@ -860,9 +849,6 @@ flake8-mutable = [
 flake8-polyfill = [
     {file = "flake8-polyfill-1.0.2.tar.gz", hash = "sha256:e44b087597f6da52ec6393a709e7108b2905317d0c0b744cdca6208e670d8eda"},
     {file = "flake8_polyfill-1.0.2-py2.py3-none-any.whl", hash = "sha256:12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9"},
-]
-flake8-quotes = [
-    {file = "flake8-quotes-3.2.0.tar.gz", hash = "sha256:3f1116e985ef437c130431ac92f9b3155f8f652fda7405ac22ffdfd7a9d1055e"},
 ]
 flakehell = [
     {file = "flakehell-0.9.0-py3-none-any.whl", hash = "sha256:48a3a9b46136240e52b3b32a78a0826c45f6dcf7d980c30f758c1db5b1439c0b"},

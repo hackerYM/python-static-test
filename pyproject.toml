@@ -21,7 +21,6 @@ flake8-builtins = {version = "^1.5.3", optional = true}
 flake8-commas = {version = "^2.0.0", optional = true}
 flake8-comprehensions = {version = "^3.3.1", optional = true}
 flake8-mutable = {version = "^1.2.0", optional = true}
-flake8-quotes = {version = "^3.2.0", optional = true}
 flakehell = {version = "^0.9.0", optional = true}
 pep8-naming = {version = "^0.11.1", optional = true}
 safety = {version = "^1.10.3", optional = true}
@@ -42,7 +41,6 @@ static-test = [
     "flake8-commas",
     "flake8-comprehensions",
     "flake8-mutable",
-    "flake8-quotes",
     "flakehell",
     "pep8-naming",
     "safety",
@@ -59,13 +57,15 @@ flake8-broken-line = ["+*"]
 flake8-builtins = ["+*", "-A003"]
 flake8-bugbear = ["+*"]
 flake8-commas = ["+*"]
-flake8-comprehensions = ["+*", "-C416"]
+flake8-comprehensions = ["+*"]
 flake8-mutable = ["+*"]
-flake8-quotes = ["+*"]
 mccabe = ["+*"]
 pep8-naming = ["+*", "-N805"]
 pycodestyle = ["+*", "-E241", "-W504"]
 pyflakes = ["+*", "-F401"]
+
+[tool.flakehell.exceptions."**/test_*.py"]
+flake8-bandit = ["+*", "-S101"]
 
 [build-system]
 requires = ["poetry>=1.1.0"]
