@@ -14,7 +14,7 @@ class _Config:
 
     PORT = 8080
     HOST = "localhost"
-    API_BASE_PATH = "/api/v1"
+    API_BASE_PATH = "/api/v1/"
     API_BASE_URL = f"http://{HOST}:{PORT}{API_BASE_PATH}"
 
     DEBUG = False
