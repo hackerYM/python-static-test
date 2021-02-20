@@ -111,19 +111,17 @@ perform static analysis of source code checking for symantec discrepancies to fo
 We use [Safety](https://github.com/pyupio/safety) to check installed Python dependencies for known security
 vulnerabilities.
 
-1. Check Python dependencies
+```shell
+safety check
+poetry export -E unit-test -E static-test | safety check --stdin
+```
 
-   ```shell
-   safety check
-   poetry export -E unit-test -E static-test | safety check --stdin
-   ```
-
-   ![Sample Image](images/sample-07.png)
+![Sample Image](images/sample-07.png)
 
 
 ### CI / CD
 
-It also can output [Code Quality](https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html) artifact
+It also can generate [Code Quality](https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html) artifact
 compatible with [Gitlab CI](.gitlab-ci.yml).
 
 ```json
