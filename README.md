@@ -52,16 +52,41 @@ The simple template to prepare static tests on a Python project.
    ![Sample Image](images/sample-03.png)
 
 
-### Utility Commands
+### Code Linter
 
-1. Run the server
+We use [Flake8](https://flake8.pycqa.org/en/latest/) and [FlakeHell](https://flakehell.readthedocs.io/index.html) to
+perform static analysis of source code checking for symantec discrepancies to follow the coding standards.
 
-    ```shell
-    python manage.py run
-    ```
+- [Flake8 Extensions](https://github.com/DmytroLitvinov/awesome-flake8-extensions)
 
-1. Get all routes
+- [Flake8 Rules](https://lintlyci.github.io/Flake8Rules/)
 
-    ```shell
-    python manage.py routes
-    ```
+- [Bandit Rules](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing)
+
+1. Config in [pyproject.toml](pyproject.toml)
+
+   ```toml
+   [tool.flakehell]
+   plugins-rule = "..."
+
+   [tool.flakehell.plugins]
+   package-name = ["+*", "..."]
+   ```
+
+1. Inspect Flake8 plugins
+
+   ```shell
+   flakehell plugins
+   flakehell codes <package-name>
+   ```
+
+   ![Sample Image](images/sample-04.png)
+   ![Sample Image](images/sample-05.png)
+
+1. Run patched flake8 against the code
+
+   ```shell
+   flakehell lint
+   ```
+
+   ![Sample Image](images/sample-06.png)

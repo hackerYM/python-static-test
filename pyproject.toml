@@ -31,7 +31,7 @@ pre-commit = "^2.10.1"
 [tool.poetry.extras]
 unit-test = [
     "pytest-flask",
-    "pytest-cov"
+    "pytest-cov",
 ]
 static-test = [
     "flake8-bandit",
