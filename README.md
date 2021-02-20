@@ -6,7 +6,8 @@
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/hackerYM/python-static-test?color=blue)
 ![Code Style](https://img.shields.io/badge/code%20style-flake8-000000.svg)
 
-The simple template to prepare static tests on a Python project.
+The simple template to prepare static tests on any Python projects, and we use [Flask](https://github.com/pallets/flask)
+to build a simple API services as our example.
 
 
 ### Project setup
@@ -55,7 +56,7 @@ The simple template to prepare static tests on a Python project.
    pre-commit install
    ```
 
-1. Set up the [configuration](.pre-commit-config.yaml)
+1. Config in [pre-commit-config.yaml](.pre-commit-config.yaml)
 
 1. Run against all the files
 
