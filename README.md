@@ -1,10 +1,11 @@
 # Python Static Test
 
-### About
-
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/hackerYM/python-static-test)
 ![GitHub](https://img.shields.io/github/license/hackerYM/python-static-test)
 ![Code Style](https://img.shields.io/badge/code%20style-flake8-000000.svg)
+
+
+### About
 
 The simple template to prepare static tests on any Python projects, and we use [Flask](https://github.com/pallets/flask)
 to build a simple API services as our example.
